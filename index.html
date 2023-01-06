@@ -87,15 +87,18 @@
   </head>
 
   <body>
-    <div class="navbar">
+    <div class="navbar" id="myTopnav">
       <nav>
-        <span>François-Alexian Lopes</span>
+        <a href="# "> François-Alexian Lopes </a>
         <a href="#about"> A Propos </a>
         <a href="#professional-projects"> Projet Professionel</a>
         <a href="#personal-work"> Travail Personnel</a>
         <a href="#"> Mon CV </a>
         <a href="#contact"> Contact</a>
         <button type="button" id="night-button"></button>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
       </nav>
     </div>
     <div class="showreel">
@@ -453,6 +456,15 @@
       
         })
       }
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  } 
     </script>
   </body>
 </html>
