@@ -1,265 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> François-Alexian Lopes Portfolio </title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>François-Alexian Lopes Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <script>
-        window.console = window.console || function (t) {};
+      window.console = window.console || function (t) {};
     </script>
 
-
-
     <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
     </script>
-</head>
-
-<body>
+    <style class="INLINE_PEN_STYLESHEET_ID">
+        .btn-container {
+      margin: auto;
+      width: 70%;
+      max-width: 600px;
+      display: flex;
+      justify-content: center;
+      padding: 4rem 0;
+    }
     
+    .btn {
+      padding: 1rem 3rem;
+      border: 1px solid royalblue;
+      margin: 0 5px;
+      font-size: 1rem;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+    
+    .container {
+      margin: auto;
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-rows: repeat(4, 350px);
+      column-gap: 10px;
+      row-gap: 10px;
+      color: #fff;
+    }
+    
+    .filtered-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    
+    [data-csharp] {
+      background-color: coral;
+    }
+  
+    [data-unitytroisd] {
+      background-color: coral;
+    }
+    
+    [data-html] {
+      background-color: cornflowerblue;
+    }
+    
+    [data-unitydeuxd] {
+      background-color: crimson;
+    }
+     
+    [data-api] {
+      background-color: crimson;
+    }
+  
+    .show {
+      display: block;
+    }
+    
+    .remove {
+      display: none;
+    }
+      </style>
+  </head>
+
+  <body>
     <div class="navbar">
-        <nav>
-                <span>François-Alexian Lopes</span>
-            <a href="#about"> A Propos </a>
-            <a href="#professional-projects"> Projet Professionel</a>
-            <a href="#personal-work"> Travail Personnel</a>
-            <a href="#"> Mon CV </a>
-            <a href="#contact"> Contact</a>
-            <button type="button" id="night-button"></button>
-        </nav>
+      <nav>
+        <span>François-Alexian Lopes</span>
+        <a href="#about"> A Propos </a>
+        <a href="#professional-projects"> Projet Professionel</a>
+        <a href="#personal-work"> Travail Personnel</a>
+        <a href="#"> Mon CV </a>
+        <a href="#contact"> Contact</a>
+        <button type="button" id="night-button"></button>
+      </nav>
     </div>
     <div class="showreel">
-        <video controls width="100%">
-            <source src="Explosion - 891.mp4" type="video/mp4">
-            <source src="Explosion - 891 .webm" type="video/webm">
-            <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
-                Voici <a href="Explosion - 891.mp4">un lien pour télécharger le Showreel</a>.</p>
-        </video>
+      <video controls width="100%">
+        <source src="Explosion - 891.mp4" type="video/mp4" />
+        <source src="Explosion - 891 .webm" type="video/webm" />
+        <p>
+          Votre navigateur ne prend pas en charge les vidéos HTML5. Voici
+          <a href="Explosion - 891.mp4">un lien pour télécharger le Showreel</a
+          >.
+        </p>
+      </video>
     </div>
     <div class="about" id="about">
-        <div class="about-title">
-            <span> A propos de moi </span>
+      <div class="about-title">
+        <span> A propos de moi </span>
+      </div>
+      <div class="about-text">
+        <div class="flex-photo-intro">
+          <div class="flex-items"></div>
+          <div class="flex-items"></div>
         </div>
-        <div class="about-text">
-            <div class="flex-photo-intro">
-                <div class="flex-items"></div>
-                <div class="flex-items"></div>
-            </div>
+      </div>
+      <div class="flex-name-git">
+        <div class="flex-items">
+          <span>Nom :</span>
+          François-Alexian Lopes
         </div>
-        <div class="flex-name-git">
-            <div class="flex-items">
-                <span>Nom :</span>
-                François-Alexian Lopes
-            </div>
-            <div class="flex-items">
-                <span> Git :</span>
-                <a href="https://github.com/lopesf-a"> lopesf-a</a>
-            </div>
+        <div class="flex-items">
+          <span> Git :</span>
+          <a href="https://github.com/lopesf-a"> lopesf-a</a>
         </div>
-        <div class="flex-email-itch.io">
-            <div class="flex-items">
-                <span>Email :</span>
-                <span>francois.lopes@yahoo.com</span>
-            </div>
-            <div class="flex-items">
-                <span> Itch.io :</span>
-                <a href="http://lopesf-a.itch.io/"> lopesf-a</a>
-            </div>
+      </div>
+      <div class="flex-email-itch.io">
+        <div class="flex-items">
+          <span>Email :</span>
+          <span>francois.lopes@yahoo.com</span>
         </div>
+        <div class="flex-items">
+          <span> Itch.io :</span>
+          <a href="http://lopesf-a.itch.io/"> lopesf-a</a>
+        </div>
+      </div>
     </div>
     <div class="professionalproject" id="professional-projects">
-        <h2> Projets Professionel </h2>
-        <span> En cours de travail </span>
-         <div class="btn-container">
-    <button class="btn show-all">show all</button>
-    <button class="btn car">cars</button>
-    <button class="btn movie">movies</button>
-    <button class="btn color">colors</button>
-  </div>
+      <h2>Projets Professionel</h2>
+      <span> En cours de travail </span>
+      <div class="btn-container">
+        <button class="btn show-all">show all</button>
+        <button class="btn car">cars</button>
+        <button class="btn movie">movies</button>
+        <button class="btn color">colors</button>
+      </div>
     </div>
     <div class="personalproject" id="personal-work">
-        <h2> Projet Personnel </h2>
-         <div class="btn-container">
-    <button class="btn show-all">show all</button>
-    <button class="btn car">cars</button>
-    <button class="btn movie">movies</button>
-    <button class="btn color">colors</button>
-  </div>
-        <div class="flex-game">
-            <div class="flex-items"
-                style="background-image: url('https://i.pinimg.com/originals/61/5c/2f/615c2f94982ea8990843db7ed5372637.jpg'); background-size:100%;color: white; height: 920px;">
-            
+      <h2>Projet Personnel</h2>
+      <div class="btn-container">
+        <button class="btn show-all">show all</button>
+        <button class="btn html">Html</button>
+        <button class="btn csharp">c#</button>
+        <button class="btn unitytroisd">Unity 3D</button>
+        <button class="btn unitydeuxd">Unity 2D</button>
+        <button class="btn api">API</button>
+      </div>
 
-
-                <p>
-                    <b> Titre : </b> The Mysterious Tower
-                    <b> Scénario :</b> Dans un monde ou les dernières ressources premières se faisais très rare et ou la
-                    race humaine venais à son extinction. Des tours apparurent sur La Terre, certains humain furent
-                    invité dans ces tours mais que furent leur surprise quand pour survivre, ils devront se battre
-                    contre des monstres venant de plusieurs univers. Notre héro arrivera t'il à survivre?
-                    <b> Mot-Clé :</b>
-                    <div class="filtered-div" id="color" data-color="c#"> C#</div>
-                    <div class="filtered-div" id="color" data-color="unity 3D"> Unity 3D</div>
-                    Fantasy, RPG
-                </p>
-            </div>
-            <div class="flex-items">
-                <p>
-                    <b> Titre : </b> Warsmith
-                    <b> Scénario :</b>
-                    <b> Mot-Clé :</b> Unity 2D
-                </p>
-            </div>
-            <div class="flex-items">
-                <p>
-                    <b> Titre : </b>
-                    <b> Scénario :</b>
-                    <b> Mot-Clé :</b>
-                </p>
-            </div>
-            <div class="flex-items">
-                <p>
-                    <b> Titre : </b>
-                    <b> Scénario :</b>
-                    <b> Mot-Clé :</b>
-                </p>
-            </div>
+      <div class="container">
+        <div
+          class="filtered-div"
+          id="html"
+          data-html="html"
+          data-api="api"
+          style="
+            font-size: 10px;
+            background-image: url('https://media.discordapp.net/attachments/1013466791848181790/1020026031148650618/528thLogov1.png?width=701&height=701');
+            background-size: cover;
+          "
+        >
+          <h3>Site 528th Legion Targon - Arma 3</h3>
+          <br />
+          <br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+            debitis, voluptates dolorem esse saepe praesentium expedita
+            obcaecati commodi eligendi nostrum soluta corporis atque, delectus
+            repellendus voluptatem quia nam natus? Incidunt?
+          </p>
         </div>
+        <div
+          class="filtered-div remove"
+          id="csharp"
+          data-csharp="csharp"
+          data-unitytroisd="unitytroisd"
+          style="
+            font-size: 10px;
+            background-image: url('https://i.pinimg.com/originals/61/5c/2f/615c2f94982ea8990843db7ed5372637.jpg');
+            background-size: cover;
+          "
+        >
+          <h3>The Mysterious Tower</h3>
 
+          <p>
+            <b> Scénario : </b>
+            Dans un monde ou les dernières ressources premières se faisais très
+            rare et ou la race humaine venais à son extinction. Des tours
+            apparurent sur La Terre, certains humain furent invité dans ces
+            tours mais que furent leur surprise quand pour survivre, ils devront
+            se battre contre des monstres venant de plusieurs univers. Notre
+            héro arrivera t'il à survivre? Mots-Clé : C#, Unity 3D, Fantasy, RPG
+          </p>
+        </div>
+        <div
+          class="filtered-div remove"
+          id="unitydeuxd"
+          data-unitydeuxd="unitydeuxd"
+          data-csharp="csharp"
+          style="
+            font-size: 10px;
+            background-image: url('https://images.ctfassets.net/qpn1gztbusu2/2VffgIgpkcPBovMKg0myBL/c4466329b84864e02e0e25a30a99e451/Dark_Fantasy_Romane.jpg');
+            background-size: cover;
+          "
+        >
+          <h3>WarSmith : Return of the Lord</h3>
+
+          <p>
+            <b> Scénario :</b>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+            iusto voluptas in? Commodi accusantium voluptates iure ducimus
+            maiores, officia adipisci exercitationem asperiores error nihil
+            consequuntur provident vitae eveniet alias aut.
+
+            <b> Mots Clé: </b> Unity 2D, C#, Fantasy, RPG
+          </p>
+        </div>
+        <div
+          class="filtered-div"
+          id="unitydeuxd"
+          data-unitydeuxd="unitydeuxd"
+          data-csharp="csharp"
+          style="font-size: 10px"
+        >
+          <h3>GunSlinger</h3>
+
+          <p>
+            <b> Scénario : </b>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ut
+            cupiditate expedita minus porro officia vitae sunt nemo iure. Nam,
+            aut autem fugit similique sint quaerat! Maxime, rem. Praesentium,
+            nostrum.
+
+            <b>Mots-Clé:</b> Unity2D, C#, TPS
+          </p>
+        </div>
+        <div
+          class="filtered-div remove"
+          id="html"
+          data-html="html"
+          data-api="api"
+        >
+          <h3>Site La Compagnie</h3>
+          <p>
+            <b>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis in cum quia ratione voluptatibus incidunt ea eum,
+              aliquam commodi dignissimos doloremque expedita? Odio, consectetur
+              incidunt nostrum at esse id culpa!
+            </b>
+          </p>
+        </div>
+      </div>
     </div>
     <div class="contact" id="contact">
-        <div class="row header">
-            <h2> Me Contacter </h2>
-            <h3> N'hésitez pas à m'envoyer des mails ! </h3>
-        </div>
-        <div class="row body">
-            <form action="#">
-                <ul>
+      <div class="row header">
+        <h2>Me Contacter</h2>
+        <h3>N'hésitez pas à m'envoyer des mails !</h3>
+      </div>
+      <div class="row body">
+        <form action="#">
+          <ul>
+            <li>
+              <p class="left">
+                <label for="first_name"> Prenom </label>
+                <input type="text" name="first_name" placeholder="John" />
+              </p>
+              <p class="pull-right">
+                <label for="last_name"> Nom de Famille </label>
+                <input type="text" name="last_name" placeholder="Smith" />
+              </p>
+            </li>
 
-                    <li>
-                        <p class="left">
-                            <label for="first_name"> Prenom </label>
-                            <input type="text" name="first_name" placeholder="John" />
-                        </p>
-                        <p class="pull-right">
-                            <label for="last_name"> Nom de Famille </label>
-                            <input type="text" name="last_name" placeholder="Smith" />
-                        </p>
-                    </li>
+            <li>
+              <p>
+                <label for="email"> Email <span class="req">*</span></label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="john.smith@gmail.com"
+                />
+              </p>
+            </li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <label for="comments"> Commentaire </label>
+              <textarea cols="46" rows="3" name="comments"></textarea>
+            </li>
 
-                    <li>
-                        <p>
-                            <label for="email"> Email <span class="req">*</span></label>
-                            <input type="email" name="email" placeholder="john.smith@gmail.com" />
-                        </p>
-                    </li>
-                    <li>
-                        <div class="divider"></div>
-                    </li>
-                    <li>
-                        <label for="comments"> Commentaire </label>
-                        <textarea cols="46" rows="3" name="comments"></textarea>
-                    </li>
-
-                    <li>
-                        <input class="btn btn-submit" type="submit" value="Submit" />
-                        <small>or press <strong>enter</strong></small>
-                    </li>
-
-                </ul>
-            </form>
-        </div>
+            <li>
+              <input class="btn btn-submit" type="submit" value="Submit" />
+              <small>or press <strong>enter</strong></small>
+            </li>
+          </ul>
+        </form>
+      </div>
     </div>
     <!-- Site footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <h6>About</h6>
-                    <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the
-                        upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or
-                        snippets as the code wants to be simple. We will help programmers build up concepts in different
-                        programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android,
-                        SQL and Algorithm.</p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>A propos </h6>
+            <p class="text-justify">
+               Portfolio de François-Alexian Lopes
+            </p>
+          </div>
 
-                <div class="col-xs-6 col-md-3">
-                    <h6>Categories</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">C#</a></li>
-                        <li><a href="#">C++</a></li>
-                        <li><a href="#">SQL</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">PHP</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Application</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-6 col-md-3">
-                    <h6>Quick Links</h6>
-                    <ul class="footer-links">
-                        <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                        <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                        <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                        <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                        <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#about"> A propos</a></li>
+              <li><a href="#contact"> Nous Contactez</a></li>
+              <li>
+                <a href="http://scanfcode.com/privacy-policy/"
+                  >Privacy Policy</a
+                >
+              </li>
+          </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                        <a href="#">Scanfcode</a>.
-                    </p>
-                </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2025 All Rights Reserved by
+              <a href="#">François-Alexian Lopes</a>.
+            </p>
+          </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
-    <script
-        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js">
-    </script>
-
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
 
     <script id="rendered-js">
-        const nightButton = document.querySelector("#night-button");
+      const nightButton = document.querySelector("#night-button");
 
-        nightButton.textContent = "Night Mode";
+      nightButton.textContent = "Night Mode";
 
-        nightButton.addEventListener("click", () => {
-            document.querySelector("body").classList.toggle("active");
-            nightButton.classList.toggle('active-button');
-            nightButton.textContent === "Night Mode" ?
-                nightButton.textContent = "Day Mode" : nightButton.textContent = "Night Mode";
-        });
-        //# sourceURL=pen.js
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-} 
+      nightButton.addEventListener("click", () => {
+        document.querySelector("body").classList.toggle("active");
+        nightButton.classList.toggle("active-button");
+        nightButton.textContent === "Night Mode"
+          ? (nightButton.textContent = "Day Mode")
+          : (nightButton.textContent = "Night Mode");
+      });
+      //# sourceURL=pen.js
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      const showAllTab = document.querySelector('.show-all')
+      const apiTab = document.querySelector('.api')
+      const csharpTab =  document.querySelector('.csharp')
+      const htmlTab = document.querySelector('.html')
+      const unitydeuxdTab = document.querySelector('.unitydeuxd')
+      const unitytroisdTab = document.querySelector('.unitytroisd')
+      
+      const allFilteredDivs = document.querySelectorAll('.filtered-div')
+      
+      // Turns node list into an array
+      const allFilteredDivsArray = Array.from(allFilteredDivs)
+      
+      showAllTab.addEventListener('click', showAll)
+      function showAll() {
+        allFilteredDivsArray.forEach(div => {
+          div.classList.remove('remove')
+          div.classList.add('show')
+        })
+      }
+      
+      apiTab.addEventListener('click', showAPI)
+      function showAPI() {
+        allFilteredDivsArray.forEach(div => {
+          div.classList.remove('remove')
+      
+          if (!div.dataset.api) {
+            div.classList.add('remove')
+          }
+      
+        })
+      }
+      
+      csharpTab.addEventListener('click', showCsharp)
+      function showCsharp() {
+        allFilteredDivsArray.forEach(div => {
+          div.classList.remove('remove')
+      
+          if (!div.dataset.csharp) {
+            div.classList.add('remove')
+          }
+      
+        })
+      }
+      
+      htmlTab.addEventListener('click', showHtml)
+      function showHtml() {
+        allFilteredDivsArray.forEach(div => {
+          div.classList.remove('remove')
+          
+          if (!div.dataset.html) {
+            div.classList.add('remove')
+          }
+      
+        })
+      }
+      unitydeuxdTab.addEventListener('click', showUnity2D)
+      function showUnity2D() {
+        allFilteredDivsArray.forEach(div => {
+          div.classList.remove('remove')
+          
+          if (!div.dataset.unitydeuxd) {
+            div.classList.add('remove')
+          }
+      
+        })
+      }
+      unitytroisdTab.addEventListener('click', showUnity3D)
+      function showUnity3D() {
+        allFilteredDivsArray.forEach(div => {
+          div.classList.remove('remove')
+          
+          if (!div.dataset.unitytroisd) {
+            div.classList.add('remove')
+          }
+      
+        })
+      }
     </script>
-</body>
-
+  </body>
 </html>
