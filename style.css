@@ -3,7 +3,6 @@
     background-color: darkgrey;
     display: inline-block;
     width: 100%;
-    position: fixed;
 }
 .navbar #night-button {
     background-color: #212121;
